@@ -1,66 +1,98 @@
-# 🛍️ E-Commerce SQL Analysis Project
+# E-Commerce SQL Analysis Project
 
-## 📌 Overview
-This project simulates an e-commerce platform database and demonstrates advanced SQL analytics on key business metrics such as product performance, customer spending behavior, profitability, and return rates. It's designed to showcase proficiency in writing complex SQL queries using JOINs, CTEs, aggregate functions, and window functions.
+## Overview
+This project analyzes an e-commerce relational database to understand customer purchasing behavior, product performance, profitability, repeat purchases, and return patterns.
 
----
-
-## 🗃️ Database Schema
-
-The project contains 6 core tables:
-- **customers**: Information about users (name, country, join date).
-- **products**: Product name, category, price, and cost.
-- **orders**: Order records linked to customers.
-- **order_items**: Detailed list of items in each order.
-- **product_reviews**: Ratings and reviews left by customers.
-- **returns**: Return records with reasons and dates.
+The objective was to use SQL to answer business questions that could support decisions related to customer retention, product strategy, and profitability.
 
 ---
 
-## 🧠 Tools & Skills Used
+## Database Structure
 
-- **SQL (MySQL)**:  
-  - JOINs  
-  - GROUP BY & HAVING  
-  - CTEs  
-  - Window Functions  
-  - Subqueries  
-  - Aggregations & Calculations
+The database consists of six related tables:
 
-- **MySQL Workbench**  
-- **dbdiagram.io** (for ERD)
+- Customers
 
----
+- Products
 
-## 🔍 Analytical Questions Answered
+- Orders
 
-| # | Analysis Description |
-|---|-----------------------|
-| 01 | Best-selling products by quantity |
-| 02 | Top customers by total spending |
-| 03 | Product profitability (revenue, cost, margin) |
-| 04 | Customers whose spending is above average |
-| 05 | Products with multiple returns |
-| 06 | First order per customer using window functions |
-| 07 | Product rating vs. average category rating |
-| 08 | Return rate as a percentage of total items |
-| 09 | Top countries by customer count |
-| 10 | Repeat customers with ≥ 2 orders |
+- Order Items
 
-All queries are stored in the `/queries` folder with clear file names and comments.
+- Product Reviews
+
+- Returns
+
+An Entity Relationship Diagram (ERD) was created to define the relationships between the tables.
 
 ---
 
-## 🗺️ Entity Relationship Diagram (ERD)
+## Tools & Skills Used
+
+- **SQL Skills Demonstrated**:  
+  - INNER JOIN and LEFT JOIN
+  - GROUP BY and HAVING
+  - Common Table Expressions (CTEs)
+  - Subqueries
+  - Window Functions
+  - Aggregate Functions
+  - Conditional Logic
+  - Business KPI Calculations
+
+## Business Questions
+
+The analysis answers questions including:
+
+Which products generate the highest sales volume?
+
+Which customers contribute the most revenue?
+
+Which products generate the highest profit margins?
+
+Which customers spend above the overall average?
+
+Which products have the highest return activity?
+
+What was each customer's first purchase?
+
+Which products perform above their category's average rating?
+
+What percentage of sold items are returned?
+
+Which markets have the largest customer base?
+
+Which customers demonstrate repeat purchasing behavior?
+
+
+---
+
+## Key Analytical Areas
+
+### Customer Analysis
+Identified high-value and repeat customers using order frequency and spending patterns.
+### Product Performance
+Analyzed product sales, revenue, cost, and profitability to identify strong and weak performers.
+### Returns Analysis
+Calculated return rates to identify products with unusually high return activity.
+### Customer Purchase Behavior
+Used window functions and aggregation techniques to analyze first purchases, repeat orders, and customer spending behavior.
+
+---
+
+## Entity Relationship Diagram (ERD)
 
 ![ERD](ERD.png)
 
 ---
 
-## 🚀 How to Use
+## Repository Structure
 
-1. Run `schema.sql` to create the database structure.
-2. Run `mock_data.sql` to populate sample data.
-3. Run queries from the `/queries` folder using MySQL Workbench.
+schema.sql — database structure
+
+mock_data.sql — sample data
+
+/queries — SQL analysis queries
+
+ERD.png — database relationship diagram
 
 
