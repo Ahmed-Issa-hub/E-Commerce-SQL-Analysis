@@ -87,11 +87,11 @@ Used window functions and aggregation techniques to analyze first purchases, rep
 
 ## Repository Structure
 
-schema.sql — database structure
+01 schema.sql — database structure
 
-mock_data.sql — sample data
+02 mock_data.sql — sample data
 
-/queries — SQL analysis queries
+/Queries — SQL analysis queries
 
 ERD.png — database relationship diagram
 
